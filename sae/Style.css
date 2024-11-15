@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #3B3B58;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    background-color: #CF9893;
+}
+/* Style de la barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ajouté pour aligner verticalement tous les éléments */
+    background-color: #7A5980;
+    position: relative;
+}
+
+/* Style des liens dans la navigation */
+nav a {
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative; /* Pour gérer le hover */
+    display: inline-block; /* Pour s'assurer que l'alignement fonctionne */
+    vertical-align: middle; /* Alignement vertical centré */
+    line-height: 1; /* Eviter les décalages de ligne */
+}
+
+/* Style de l'élément qui contient le lien "Synthèse des Missions" et son sous-menu */
+nav .menu-item {
+    position: relative; /* Permet de positionner le sous-menu par rapport à cet élément */
+}
+
+/* Menu déroulant (les missions) */
+nav .dropdown {
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%; /* Le sous-menu apparaît sous le lien */
+    left: 0;
+    width: 200px; /* Largeur fixe pour le sous-menu */
+    background-color: #2e1e8a;
+    box-shadow: 0 8px 16px #A96DA3;
+    text-align: left;
+    z-index: 10; /* Pour s'assurer que le menu est au-dessus du reste du contenu */
+}
+img.logo {
+    width: 150px;
+    height: 150px;
+}
+img.logoparis {
+    margin-top: 100px;
+    width: 250px;
+    height: 100px;
+}
+/* Liens du sous-menu (Mission 1, 2, 3) */
+nav .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Changement de couleur au survol des éléments du sous-menu */
+nav .dropdown a:hover {
+    background-color: #005c4a;
+}
+
+/* Afficher le sous-menu lorsque le parent ".menu-item" est survolé */
+nav .menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Changement de couleur du lien principal au survol */
+nav a:hover {
+    background-color: #A96DA3;
+}
+
+/* Affiche le lien principal "Synthèse des Missions" en survol */
+nav .menu-item a:hover {
+    background-color: #A96DA3;
+}
+
+/* Adaptation du menu pour mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .dropdown {
+        position: static; /* Le sous-menu devient statique sur les petits écrans */
+        width: auto; /* La largeur du sous-menu s'ajuste automatiquement */
+    }
+}
+.mission {
+    margin-bottom: 20px;
+}
+p {
+    text-align: center;
+}
+ol{
+    list-style-type: lower-greek;
+    text-size: 20px;
+}
+
+h2.explication {
+    font-size: 35px;
+}
+
+h1.titre {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sommaire {
+    margin-left: 20px;
+}
+
+ul{
+    font-size: 25px;
+}
+
+.explication{
+    margin: 50px 30px 10px 40px;
+    font-size: 35px;
+    text-align: start;
+    
+    p{
+        text-align: justify;
+        margin-bottom: 40px;
+        font-size: 25px;
+        padding-left: 0px;
+    }
+
+}
+
+
+footer p{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.intro p {
+
+    font-size: 30px;
+
+}
+
+div.sommaire{
+    margin: 100px 0px 0px 40px;
+}
+
+div.sommaire h2{
+
+    font-size: 25px;
+
+}
+
+div.sommaire li{
+    font-size: 20px;
+}
+
+img.espaceImage{
+    margin-top: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
